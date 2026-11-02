@@ -1,0 +1,192 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home | Luthra Dental Care{% endblock %}
+
+{% block content %}
+
+<section class="hero home-hero">
+
+    <!-- LEFT SIDE QUOTE -->
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            Vadugapatti · Periyakulam · Theni
+        </span>
+
+        <h1>
+            Caring for your smiles, for life.
+        </h1>
+
+        <p>
+            Gentle, modern dental care for every member of the family —
+            from routine cleanings to root canal treatment and complete
+            smile makeovers, guided by Dr. Kousalya Rajaram, BDS.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{{ url_for('appointment') }}" class="btn btn-primary">
+                Book an Appointment
+            </a>
+
+            <a href="{{ url_for('services') }}" class="btn btn-outline">
+                Explore Treatments
+            </a>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE IMAGE -->
+    <div class="hero-image">
+        <img
+            src="{{ url_for('static', filename='images/frontimg.jpeg') }}"
+            alt="Smile Is Your Identity - Dental Care">
+    </div>
+
+</section>
+
+<footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- CLINIC INFORMATION -->
+            <div class="footer-column footer-about">
+
+                <div class="footer-brand">
+                    <img src="{{ url_for('static', filename='images/logo.jpeg') }}"
+                         alt="Luthra Dental Care Logo">
+
+                    <h3>Luthra Dental Care</h3>
+                </div>
+
+                <p>
+                    Caring for your smiles — general and family dental care
+                    for Vadugapatti, Periyakulam and the wider Theni community.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="https://www.facebook.com/pages/luthra-dental-clinic/511834618900317"
+                       target="_blank"
+                       rel="noopener"
+                       aria-label="Facebook">
+                        f
+                    </a>
+
+                    <a href="https://www.instagram.com/drkousalya_luthradentalcare"
+                       target="_blank"
+                       rel="noopener"
+                       aria-label="Instagram">
+                        ◎
+                    </a>
+
+                    <a href="https://in.linkedin.com/in/kousalya-s-b5705a18b"
+                       target="_blank"
+                       rel="noopener"
+                       aria-label="LinkedIn">
+                        in
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- EXPLORE -->
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <ul>
+                    <li>
+                        <a href="{{ url_for('about') }}">About Dr. Kousalya</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('services') }}">Dental Services</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('contact') }}#faq">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('appointment') }}">Book Appointment</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- POPULAR SERVICES -->
+            <div class="footer-column">
+
+                <h4>Popular Services</h4>
+
+                <ul>
+                    <li>
+                        <a href="{{ url_for('services') }}#root-canal-treatment">
+                            Root Canal Treatment
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('services') }}#pediatric-dentistry">
+                            Pediatric Dentistry
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('services') }}#teeth-whitening">
+                            Teeth Whitening
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('services') }}#dental-implants">
+                            Dental Implants
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- VISIT US -->
+            <div class="footer-column">
+
+                <h4>Visit Us</h4>
+
+                <p>
+                    Luthra Dental Care, Near Bus Stop,
+                    Vadugapatti, Periyakulam, Theni,
+                    Tamil Nadu
+                </p>
+
+                <div class="footer-contact-item">
+                    <a href="tel:+918270050287">82700 50287</a>
+                </div>
+
+                <div class="footer-contact-item">
+                    Mon–Sat · 9:30–1:00 &amp; 5:00–8:30
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+
+            © <span id="year"></span> Luthra Dental Care.
+            All rights reserved.
+            Registered with Tamil Nadu Dental Council · Reg. No.:16862
+
+        </div>
+
+    </footer>
+
+
+
+
+{% endblock %}

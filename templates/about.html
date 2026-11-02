@@ -1,0 +1,335 @@
+
+{% extends "base.html" %}
+
+{% block title %}About Us | Luthra Dental Care{% endblock %}
+
+{% block content %}
+
+<!-- =================================
+     PAGE BANNER
+================================= -->
+<section class="page-banner">
+    <h1>About Luthra Dental Care</h1>
+    <p>Meet our dentist, explore our clinic and learn about our community work.</p>
+</section>
+
+
+<!-- =================================
+     1. DOCTOR PROFILE
+================================= -->
+<section class="section-padding">
+    <div class="doctor-profile">
+
+        <div class="doctor-profile-image">
+            <img
+                src="{{ url_for('static', filename='images/Dr.Kousalya Rajaram.jpeg') }}"
+                alt="Dr. Kousalya Rajaram">
+        </div>
+
+        <div class="doctor-profile-content">
+
+            <span class="section-tag">MEET OUR DOCTOR</span>
+
+            <h2>Dr. Kousalya Rajaram</h2>
+
+            <h3>BDS | Root Canal Specialist & Founder</h3>
+
+            <p>
+                Dr. Kousalya Rajaram is the founder of Luthra Dental Care
+                and is dedicated to providing quality and comfortable
+                dental care for patients.
+            </p>
+
+            <p>
+                With over 12 years of experience, she focuses on
+                patient-friendly treatment and helping people maintain
+                healthy, confident smiles.
+            </p>
+
+            <div class="qualification-list">
+
+                <div>
+                    <span>✓</span>
+                    <p>Bachelor of Dental Surgery (BDS)</p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>Root Canal Specialist</p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>Member of Indian Dental Association (IDA)</p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>Tamil Nadu Dental Council Reg. No. 16862</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =================================
+     2. DOCTOR ACHIEVEMENTS BLUE BOX
+================================= -->
+<section class="doctor-stats">
+
+    <div class="stat-item">
+        <h2>1200+</h2>
+        <p>Happy Patients</p>
+    </div>
+
+    <div class="stat-item">
+        <h2>3000+</h2>
+        <p>Procedures</p>
+    </div>
+
+    <div class="stat-item">
+        <h2>12+</h2>
+        <p>Years of Experience</p>
+    </div>
+
+    <div class="stat-item">
+        <h2>10+</h2>
+        <p>Dental Camps</p>
+    </div>
+
+</section>
+
+
+<!-- =================================
+     3. WHY CHOOSE US
+================================= -->
+<section class="section-padding why-choose-section">
+
+    <div class="section-heading">
+
+        <span class="section-tag">WHY CHOOSE US</span>
+
+        <h2>Your Smile Is Our Priority</h2>
+
+        <p>
+            We are committed to providing comfortable,
+            reliable and quality dental care for everyone.
+        </p>
+
+    </div>
+
+    <div class="why-choose-grid">
+
+        <div class="why-card">
+            <div class="why-icon">✦</div>
+            <h3>Experienced Dentist</h3>
+            <p>
+                Dental care guided by Dr. Kousalya Rajaram
+                with over 12 years of experience.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">♥</div>
+            <h3>Patient-Friendly Care</h3>
+            <p>
+                We focus on patient comfort and personalized
+                attention throughout every treatment.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">✚</div>
+            <h3>Hygiene & Safety</h3>
+            <p>
+                We prioritize cleanliness, hygiene and
+                patient safety in our clinic.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">☺</div>
+            <h3>Quality Treatments</h3>
+            <p>
+                We provide a range of dental treatments
+                to support healthy and confident smiles.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🏥</div>
+            <h3>Community Care</h3>
+            <p>
+                We conduct dental camps to encourage
+                oral health awareness in the community.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">☑</div>
+            <h3>Personalized Attention</h3>
+            <p>
+                We understand each patient's needs and
+                aim to make their dental visits comfortable.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     4. SAFETY HIGHLIGHT
+================================= -->
+<section class="safety-highlight">
+
+    <div class="safety-icon">✓</div>
+
+    <div>
+        <h2>100% Safe Environment</h2>
+
+        <p>
+            We prioritize cleanliness, hygiene and patient safety
+            throughout our dental treatments.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- =================================
+     5. ABOUT THE CLINIC
+================================= -->
+<section class="section-padding about-section">
+
+    <div class="about-image">
+        <img
+            src="{{ url_for('static', filename='images/clinic2.jpeg') }}"
+            alt="Luthra Dental Care Clinic">
+    </div>
+
+    <div class="about-content">
+
+        <span class="section-tag">OUR CLINIC</span>
+
+        <h2>Welcome to Luthra Dental Care</h2>
+
+        <p>
+            Luthra Dental Care is committed to providing quality
+            dental care in a friendly and comfortable environment.
+            We focus on helping individuals and families maintain
+            good oral health.
+        </p>
+
+        <p>
+            Our clinic provides dental services with attention
+            to patient comfort, hygiene and personalized care.
+        </p>
+
+        <p>
+            Whether you need a routine dental check-up or
+            specialized treatment, we are here to care for your smile.
+        </p>
+
+        <a href="{{ url_for('services') }}" class="btn btn-primary">
+            Explore Our Treatments
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     6. CLINIC PHOTO GALLERY
+================================= -->
+<section class="section-padding gallery-section">
+
+    <div class="section-heading">
+
+        <span class="section-tag">OUR SPACE</span>
+
+        <h2>Inside Our Clinic</h2>
+
+        <p>Take a look at Luthra Dental Care.</p>
+
+    </div>
+
+    <div class="clinic-gallery">
+
+        <img
+            src="{{ url_for('static', filename='images/clinic1.jpeg') }}"
+            alt="Luthra Dental Care clinic">
+
+        <img
+            src="{{ url_for('static', filename='images/clinic2.jpeg') }}"
+            alt="Clinic interior">
+
+        <img
+            src="{{ url_for('static', filename='images/clinic3.jpeg') }}"
+            alt="Dental clinic">
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     7. DENTAL CAMPS
+================================= -->
+<section class="section-padding camp-section">
+
+    <div class="section-heading">
+
+        <span class="section-tag">SERVING OUR COMMUNITY</span>
+
+        <h2>Our Dental Camps</h2>
+
+        <p>
+            We believe dental awareness and oral healthcare
+            should reach everyone in our community.
+        </p>
+
+    </div>
+
+    <div class="clinic-gallery camp-gallery">
+
+        <img
+            src="{{ url_for('static', filename='images/camp1.jpeg') }}"
+            alt="Luthra Dental Care dental camp">
+
+        <img
+            src="{{ url_for('static', filename='images/camp2.jpeg') }}"
+            alt="Dental awareness camp">
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     8. APPOINTMENT BANNER
+================================= -->
+<section class="appointment-banner">
+
+    <div>
+
+        <span class="section-tag">WE ARE HERE FOR YOU</span>
+
+        <h2>Let us take care of your smile</h2>
+
+        <p>Book your dental appointment with Luthra Dental Care.</p>
+
+    </div>
+
+    <a href="{{ url_for('appointment') }}" class="btn btn-primary">
+        Book Appointment
+    </a>
+
+</section>
+
+{% endblock %}

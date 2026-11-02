@@ -1,0 +1,153 @@
+
+{% extends "base.html" %}
+
+{% block title %}Dental Services | Luthra Dental Care{% endblock %}
+
+{% block content %}
+
+<!-- PAGE BANNER -->
+<section class="page-banner">
+    <h1>Our Dental Services</h1>
+    <p>Comprehensive dental care for healthy and confident smiles.</p>
+</section>
+
+<!-- SERVICES INTRODUCTION -->
+<section class="services-intro section-padding">
+    <span class="section-tag">WHAT WE OFFER</span>
+    <h2>Complete Dental Care Under One Roof</h2>
+    <p>
+        Explore our range of dental treatments designed to support
+        your oral health and help you maintain a beautiful smile.
+    </p>
+</section>
+
+<!-- ALL TREATMENTS -->
+<section class="all-services section-padding">
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/General-Dentistry.jpg') }}"
+                 alt="General Dentistry">
+            <div class="service-card-content">
+                <h3>General Dentistry</h3>
+                <p>Routine dental examinations, preventive care and treatment for common dental problems.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/Root canal treatment.jpeg') }}"
+                 alt="Root Canal Treatment">
+            <div class="service-card-content">
+                <h3>Root Canal Treatment</h3>
+                <p>Treatment to address infection inside a tooth and help preserve the natural tooth.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/dental implants.jpg') }}"
+                 alt="Dental Implants">
+            <div class="service-card-content">
+                <h3>Dental Implants</h3>
+                <p>A tooth replacement option designed to restore the appearance and function of missing teeth.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/Pediatric-Dentistry.jpg') }}"
+                 alt="Pediatric Dentistry">
+            <div class="service-card-content">
+                <h3>Pediatric Dentistry</h3>
+                <p>Dental examinations and oral care for children at different stages of growth.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/dental bridges.jpg') }}"
+                 alt="Dental Bridges">
+            <div class="service-card-content">
+                <h3>Dental Bridges</h3>
+                <p>A restorative option used to replace one or more missing teeth.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/dental veneers.jpg') }}"
+                 alt="Dental Veneers">
+            <div class="service-card-content">
+                <h3>Dental Veneers</h3>
+                <p>Thin coverings placed on the front surface of teeth to improve their appearance.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/dentures.jpeg') }}"
+                 alt="Dentures">
+            <div class="service-card-content">
+                <h3>Dentures</h3>
+                <p>Removable dental appliances designed to replace missing teeth.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/gum treatment.jpg') }}"
+                 alt="Gum Treatment">
+            <div class="service-card-content">
+                <h3>Gum Treatment</h3>
+                <p>Care and treatment for gum problems to support healthy gums.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/Oral cancer Screening.jpg') }}"
+                 alt="Oral Cancer Screening">
+            <div class="service-card-content">
+                <h3>Oral Cancer Screening</h3>
+                <p>Examination of the mouth to identify suspicious changes that may need further evaluation.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/Smile makeover.jpg') }}"
+                 alt="Smile Makeover">
+            <div class="service-card-content">
+                <h3>Smile Makeover</h3>
+                <p>Cosmetic dental procedures planned to improve the appearance of your smile.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/teeth Whitening.webp') }}"
+                 alt="Teeth Whitening">
+            <div class="service-card-content">
+                <h3>Teeth Whitening</h3>
+                <p>A cosmetic treatment designed to reduce stains and brighten the appearance of teeth.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="{{ url_for('static', filename='images/treatments/wisdom tooth extraction.jpeg') }}"
+                 alt="Wisdom Tooth Extraction">
+            <div class="service-card-content">
+                <h3>Wisdom Tooth Extraction</h3>
+                <p>Removal of wisdom teeth when recommended following dental assessment.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- APPOINTMENT LINK -->
+<section class="appointment-banner">
+    <div>
+        <h2>Need Help Choosing a Treatment?</h2>
+        <p>Book an appointment to discuss your dental concerns.</p>
+    </div>
+
+    <a href="{{ url_for('appointment') }}" class="btn btn-light">
+        Book an Appointment
+    </a>
+</section>
+
+{% endblock %}

@@ -1,0 +1,278 @@
+
+{% extends "base.html" %}
+
+{% block title %}Contact Us | Luthra Dental Care{% endblock %}
+
+{% block content %}
+
+<!-- CONTACT PAGE TOP BANNER -->
+<section class="contact-hero">
+
+    <div class="contact-breadcrumb">
+        <a href="{{ url_for('home') }}">Home</a>
+        <span>/ Contact</span>
+    </div>
+
+    <div class="contact-hero-tag">
+        <span></span>
+        GET IN TOUCH
+    </div>
+
+    <h1>We'd love to see you smile</h1>
+
+    <p>
+        Questions about a treatment, or ready to book?
+        Reach us any way that's convenient.
+    </p>
+
+</section>
+
+
+<!-- CONTACT DETAILS AND MESSAGE FORM -->
+<section class="contact-main">
+
+    <!-- LEFT: CONTACT INFORMATION -->
+    <div class="contact-left">
+
+        <div class="contact-detail">
+            <div class="contact-symbol">📍</div>
+            <div>
+                <h3>Clinic Location</h3>
+                <p>
+                    Luthra Dental Care, Near Bus Stop,<br>
+                    Vadugapatti, Periyakulam, Theni, Tamil Nadu.
+                </p>
+                <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=Luthra+Dental+Care+Vadugapatti+Periyakulam+Theni+Tamil+Nadu"
+                    target="_blank"
+                    rel="noopener">
+                    Get Directions →
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <div class="contact-symbol">☎</div>
+            <div>
+                <h3>Phone / WhatsApp</h3>
+                <p>
+                    <a href="tel:+918270050287">82700 50287</a>
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <div class="contact-symbol">✉</div>
+            <div>
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:info@luthradentalcare.in">
+                        info@luthradentalcare.in
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <div class="contact-symbol">◷</div>
+            <div>
+                <h3>Clinic Hours</h3>
+
+                <p><strong>Mon – Sat (Morning)</strong></p>
+                <p>9:30 AM – 1:00 PM</p>
+
+                <p><strong>Mon – Sat (Evening)</strong></p>
+                <p>5:00 PM – 8:30 PM</p>
+
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <div class="contact-symbol">★</div>
+            <div>
+                <h3>Reviews & Photos</h3>
+                <p>See our clinic reviews and photos.</p>
+
+                <a
+                    href="https://maps.google.com/?cid=16360793078871902781"
+                    target="_blank"
+                    rel="noopener">
+                    Reviews on Google →
+                </a>
+
+                <br><br>
+
+                <a
+                    href="https://www.justdial.com/"
+                    target="_blank"
+                    rel="noopener">
+                    More Photos on JustDial →
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT: MESSAGE FORM -->
+    <div class="contact-form-card">
+
+        <h2>Send us a message</h2>
+
+        <p>
+            Fill in the form and our clinic will get back to you.
+        </p>
+
+        <form action="#" method="POST" id="contactForm">
+
+            <div class="form-group">
+                <label for="contactName">Full Name *</label>
+                <input
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactPhone">Phone Number *</label>
+                <input
+                    type="tel"
+                    id="contactPhone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactEmail">Email (optional)</label>
+                <input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    placeholder="Enter your email address">
+            </div>
+
+            <div class="form-group">
+                <label for="contactMessage">Message *</label>
+                <textarea
+                    id="contactMessage"
+                    name="message"
+                    rows="5"
+                    placeholder="How can we help you?"
+                    required></textarea>
+            </div>
+
+            <button type="submit">
+                Send Message →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- GOOGLE MAP -->
+<section class="contact-map-box">
+
+    <iframe
+        src="https://maps.google.com/maps?q=Luthra%20Dental%20Care%2C%20Vadugapatti%2C%20Periyakulam%2C%20Theni&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Luthra Dental Care Location">
+    </iframe>
+
+</section>
+
+
+<!-- FREQUENTLY ASKED QUESTIONS -->
+
+<section class="faq-section" id="faq">
+    <div class="faq-heading">
+        <span class="faq-tag">HAVE QUESTIONS?</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about our dental care and services.</p>
+    </div>
+
+    <div class="faq-list">
+        <details class="faq-item">
+            <summary>Do I need an appointment, or can I walk in?</summary>
+            <p>Appointments are recommended so we can give you dedicated time and reduce waiting. Walk-in patients are also welcome, subject to availability. For a convenient visit, please call or WhatsApp us before coming.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>What are your clinic hours?</summary>
+            <p>We are open Monday to Saturday, from 9:30 AM to 1:00 PM and 5:00 PM to 8:30 PM. The clinic remains closed on Sundays.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Do you treat children?</summary>
+            <p>Yes! We welcome children and provide dental care with a gentle, patient-friendly approach. Regular dental check-ups can help children develop healthy oral hygiene habits from an early age.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Is teeth cleaning or scaling painful?</summary>
+            <p>Professional teeth cleaning and scaling are generally comfortable. You may experience mild sensitivity or slight discomfort, especially if your gums are sensitive. Our team takes care to make the procedure as comfortable as possible.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Are your instruments properly sterilized?</summary>
+            <p>Patient safety and hygiene are important to us. Dental instruments are cleaned and sterilized using appropriate procedures between patients, and disposable items are used wherever necessary.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>What payment options do you accept?</summary>
+            <p>Please contact our clinic directly to confirm the currently available payment options. Our team will be happy to guide you before your visit.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>How do I know which treatment is right for me?</summary>
+            <p>The right treatment depends on your dental condition and individual needs. Our dentist will examine your teeth and gums, understand your concerns, and explain the suitable treatment options before proceeding.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>How often should I visit the dentist?</summary>
+            <p>Regular dental check-ups are generally recommended every six months. However, your dentist may suggest more frequent visits depending on your oral health and treatment needs.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Do you offer emergency dental care?</summary>
+            <p>If you experience severe tooth pain, swelling, a broken tooth, or a dental injury, please contact us as soon as possible. We will guide you regarding the next available appointment and appropriate care.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>How can I book, reschedule, or cancel an appointment?</summary>
+            <p>You can call us at 82700 50287 or contact us through WhatsApp to book, reschedule, or cancel your appointment. Please inform us in advance if your plans change.</p>
+        </details>
+    </div>
+</section>
+
+<section class="faq-contact-banner">
+    <div class="faq-contact-content">
+        <h2>Still have a question?</h2>
+        <p>We're just a call or a message away.</p>
+    </div>
+
+    <div class="faq-contact-buttons">
+        <a href="/contact" class="faq-contact-btn">Contact Us</a>
+        <a href="https://wa.me/918270050287"
+           class="faq-whatsapp-btn"
+           target="_blank"
+           rel="noopener">
+            WhatsApp Us
+        </a>
+    </div>
+</section>
+
+{% endblock %}
