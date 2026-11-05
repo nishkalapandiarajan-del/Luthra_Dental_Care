@@ -3123,3 +3123,309 @@ body.logo-expanded::before {
 .logo-fullscreen-overlay.active img {
     transform: scale(1);
 }
+/* CLINIC NAME IN HEADER */
+
+.site-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.clinic-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: 800;
+    color: #242B61;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .clinic-name {
+        font-size: 21px;
+    }
+
+    .site-header .logo {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .clinic-name {
+        font-size: 17px;
+    }
+
+    .site-header .logo img {
+        height: 48px;
+        max-width: 105px;
+    }
+}
+
+.doctor-signature {
+    color: #28765D;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 18px;
+}
+
+/* =====================================
+   RESPONSIVE FIX - MOBILE & TABLET
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .navbar {
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .doctor-profile {
+        gap: 30px;
+    }
+
+    .all-services .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 92%;
+    }
+
+    /* HEADER */
+
+    .navbar {
+        min-height: 72px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 8px 0;
+    }
+
+    .site-header .logo img {
+        height: 52px;
+        max-width: 115px;
+    }
+
+    .clinic-name {
+        font-size: clamp(16px, 4vw, 21px);
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 8px;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 0 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 10px;
+        font-size: 15px;
+    }
+
+    .nav-links .nav-button {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    /* HEADINGS */
+
+    .page-banner h1 {
+        font-size: clamp(26px, 7vw, 34px);
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .services-intro h2 {
+        font-size: 27px;
+    }
+
+    /* DOCTOR PROFILE */
+
+    .doctor-profile {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .doctor-profile-image img {
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+        object-fit: contain;
+    }
+
+    .doctor-profile-content h2 {
+        font-size: 28px;
+    }
+
+    /* STATS */
+
+    .doctor-stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        padding: 25px 15px;
+    }
+
+    .stat-item h2 {
+        font-size: 26px;
+    }
+
+    /* TREATMENTS */
+
+    .all-services .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .all-services .service-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .service-card-content {
+        padding: 13px;
+    }
+
+    .service-card h3 {
+        font-size: 16px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+    }
+
+    /* CLINIC GALLERY */
+
+    .clinic-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .clinic-gallery img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    /* BUTTONS AND BANNERS */
+
+    .appointment-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 6%;
+    }
+
+    .appointment-banner .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* FORMS */
+
+    input,
+    select,
+    textarea,
+    button {
+        max-width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .all-services .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .all-services .service-card img {
+        height: 210px;
+    }
+
+    .clinic-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .clinic-gallery img {
+        height: 230px;
+    }
+
+    .doctor-stats {
+        gap: 12px;
+    }
+
+    .stat-item h2 {
+        font-size: 23px;
+    }
+
+    .faq-heading h2 {
+        font-size: 25px;
+    }
+
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+    }
+}
